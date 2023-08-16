@@ -11,3 +11,24 @@
     Output:
         Result: D C B A
 */
+#include <stdio.h>
+
+int main() {
+    char chars[4]; 
+
+    printf("Input four charctor: ");
+    for (int i = 0; i < 4; i++) {
+        scanf(" %c", &chars[i]);
+    }
+
+    printf("Result: ");
+    for (int i = 3; i >= 0; i--) {
+        if (i == 0) {
+            printf("%c\n", chars[i]);
+        } else {
+            printf("%c ", chars[i]);
+        }
+    }
+
+    return 0;
+}
